@@ -1,77 +1,132 @@
-# 🚀 AI Dev Team 4.0 
+🚀 AI Dev Team 4.0
+Autonomous Multi-Agent Development Platform
+Transform ideas into production-ready software — fully automated, local, and intelligent.
 
-An autonomous, entirely local Multi-Agent Artificial Intelligence swarm. Designed to act as a 5-person engineering team that takes a single project idea and handles everything from **Product Requirements Analysis**, to **Writing React/Python Code**, to physically **Deploying it directly to GitHub**.
+📌 Overview
+AI Dev Team 4.0 is an advanced autonomous software development platform that simulates a real-world development team using multiple AI agents. It converts raw user ideas into complete, deployable applications through a structured pipeline — without human intervention.
+The system leverages local LLMs, ensuring zero API cost, full privacy, and unlimited generation capabilities.
 
-By leveraging state-of-the-art WebSockets, a stunning Glassmorphism UI, and `CrewAI`, this dashboard allows you to literally watch the LLM logic pipeline happen instantaneously without expensive cloud API costs.
+⚡ Key Features
 
----
+🤖 Multi-Agent Architecture
+Built using CrewAI
+Simulates 5 specialized roles:
+Product Manager
+System Architect
+Senior Developer
+QA Analyst
+DevOps Engineer
+Agents pass outputs sequentially like a real development pipeline
 
-## 🌟 Key Features
-- **The Swarm:** 5 heavily customized System Prompts (Product Manager, Architect, Senior Developer, QA Analyst, DevOps) working sequentially.
-- **Zero-Latency Live Feed:** Integrated WebSocket architecture that captures instantaneous agent execution from the FastAPI thread pool straight to the frontend dashboard.
-- **Local & Offline Execution:** Hard-wired cognitive engine running strictly through local **Ollama** models (Llama 3) for absolute data privacy and free task completion.
-- **Automated CI/CD Integration:** The DevOps Agent is equipped with custom Python `BaseTools`, enabling physical OS-level access to dynamically provision remote GitHub repositories and securely push the generated code live.
-- **Project Persistence:** An automatic history database cataloging every built task, allowing native 1-click `.zip` frontend downloads of all generated source files.
+🧠 100% Local AI Processing
+Powered by Ollama + Llama 3
+No external APIs required
+Unlimited usage with complete data privacy
 
----
+🔄 Real-Time Streaming System
+Built with FastAPI + WebSockets
+Streams live LLM thoughts and reasoning to frontend
+Non-blocking backend using asyncio
+Deep integration with AnyIO worker threads
 
-## 🛠️ The Agents
-1. 👔 **Product Manager:** Takes your raw prompt, analyzes project scope, and writes an exhaustive PRD.
-2. 🏗️ **System Architect:** Receives the PRD and mathematically structures exact backend/frontend tech stacks and API endpoints.
-3. 💻 **Senior Developer:** Actually translates the Architect's blueprints into raw, production-ready code.
-4. 🕵️ **QA & Security Analyst:** Sweeps the Developer's code hunting for security flaws, edge cases, and performance bottlenecks.
-5. 🚀 **DevOps & Release Manager:** Takes the tested build, provisions folders, creates CI/CD deployment scripts, and natively configures/pushes straight to GitHub.
+⚙️ Autonomous DevOps Execution
+DevOps Agent can:
+Run native Git commands
+Create repositories via GitHub REST API
+Push code automatically
+Fully automated deployment workflow
 
----
+📁 Smart Project History System
+Each generated project is:
+Stored in a unique directory
+Automatically tracked
+Download complete codebases as .zip files
 
-## 💻 Tech Stack
-* **Backend:** Python, FastAPI, WebSockets (`uvicorn`), CrewAI, LangChain, Subprocess Shell Automations
-* **Frontend:** React, Vite, Vanilla CSS (Glassmorphism design system)
-* **AI Tooling:** Offline Ollama Instances (Llama3)
+🎨 Premium UI/UX Dashboard
+Built with React
+Features:
+Glassmorphism design ✨
+Interactive agent panels
+Live status updates
+Multi-tab navigation
+Smooth animations
 
----
+🛠️ Tech Stack
+Backend
+Python
+FastAPI
+WebSockets
+AsyncIO
+CrewAI
+LangChain
+Frontend
+React
+Custom UI Components
+Animation Libraries
+AI & Infrastructure
+Ollama (Local LLM runtime)
+Llama 3
+DevOps & Integration
+Git CLI
+GitHub REST API
 
-## 🚀 How to Run Locally
+🧩 System Architecture
+User Idea
+   ↓
+Product Manager Agent
+   ↓
+System Architect Agent
+   ↓
+Senior Developer Agent
+   ↓
+QA Analyst Agent
+   ↓
+DevOps Agent
+   ↓
+Production-Ready Application 🚀
 
-### 1. Prerequisites 
-- Ensure you have [Ollama](https://ollama.com/) installed and running locally on your machine.
-- Pull a local model: `ollama run llama3`
-- Node.js (for React frontend) & Python 3.10+ (for FastAPI backend)
+🔥 How It Works
+User submits an idea
+Agents collaborate sequentially
+Each agent enhances output
+Code is generated automatically
+QA validates the output
+DevOps deploys and pushes to GitHub
 
-### 2. Backend Setup
-Navigate into the backend and boot up your virtual environment:
-```bash
+🚀 Installation & Setup
+1. Clone Repository
+git clone https://github.com/your-username/ai-dev-team.git
+cd ai-dev-team
+2. Setup Backend
 cd backend
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-# Mac / Linux
-source venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
-```
-Create a `.env` file inside `/backend` with:
-```env
-GITHUB_USERNAME=your_username
-GITHUB_TOKEN=your_classic_github_token
-```
-Start the FastAPI server:
-```bash
 uvicorn main:app --reload
-```
-
-### 3. Frontend Setup
-Open a second terminal, navigate to the frontend:
-```bash
+3. Setup Frontend
 cd frontend
 npm install
-npm run dev
-```
+npm start
+4. Start Ollama
+ollama run llama3
 
-### 4. Deploy!
-Head over to `http://localhost:5173` in your browser. Type your next big software idea into the "New Project" screen, hit **Deploy AI Team**, and watch your terminal light up as your Swarm builds it live!
+📦 Usage
+Open the dashboard
+Enter your idea
+Watch agents work in real-time
+Download or deploy generated code
 
----
-> *Built iteratively with Advanced Agentic coding workflows.*
+🎯 Future Improvements
+Multi-model support (GPT, Claude, etc.)
+Voice-based input system
+Auto bug-fixing loop
+CI/CD pipeline integration
+Cloud deployment support
+
+🤝 Contributing
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
+
+📄 License
+This project is licensed under the MIT License.
+
+👨‍💻 Author
+@adishank2
